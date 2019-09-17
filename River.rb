@@ -11,4 +11,10 @@ class River
     return @shoal
   end
 
+  # EXTENSION ------------------------------
+
+  def fish_count()
+    return @shoal.count
+  end
+
 end

@@ -38,5 +38,20 @@ class BearTest < MiniTest::Test
     assert_equal(2, @river_1.get_shoal().count)
   end
 
+  # EXTENSION ---------------------------------
+
+  def test_can_roar
+    assert_equal("Rrraaaarrrr", @bear_1.roar())
+  end
+
+  def test_food_count
+    assert_equal(0, @bear_1.food_count())
+  end
+
+  def test_bear_can_take_fish_extension_version
+    @bear_1.take_fish(@river_1)
+    assert_equal(1, @bear_1.food_count())
+    assert_equal(2, @river_1.fish_count())
+  end
 
 end

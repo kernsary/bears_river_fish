@@ -17,4 +17,14 @@ class Bear
     @stomach_contents.push(fish_taken)
   end
 
+# EXTENSION ----------------------------
+
+  def roar()
+    return "Rrraaaarrrr"
+  end
+
+  def food_count()
+    return @stomach_contents.count
+  end
+
 end

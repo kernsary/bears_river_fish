@@ -25,5 +25,11 @@ class RiverTest < MiniTest::Test
     assert_equal(@shoal_1, @river_1.get_shoal())
   end
 
+# EXTENSION ---------------------------------
+
+  def test_fish_count
+    assert_equal(3, @river_1.fish_count())
+  end
+
 
 end
