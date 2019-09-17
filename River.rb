@@ -7,7 +7,7 @@ class River
     @shoal = shoal
   end
 
-  def get_shoal
+  def get_shoal()
     return @shoal
   end
 
